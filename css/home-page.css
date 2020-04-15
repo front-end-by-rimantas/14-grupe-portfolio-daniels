@@ -1,4 +1,8 @@
 @import './reset.css';
+@import './main.css';
+@import './variables.css';
+@import './wrapper.css';
+@import './font-awesome.min.css';
 @import './header.css';
 @import './nav.css';
 @import './hero.css';
