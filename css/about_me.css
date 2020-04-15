@@ -17,7 +17,7 @@
         padding: 0 10px;
     }
         .about-me-rest > h3 {
-            color: #748182;
+            color:  var( --p-text-color);
             font-weight: 100;
             padding-top: 5px;
         }
@@ -26,7 +26,7 @@
             width: 100%;
             line-height: 1.6;
             font-size: 18px;
-            color: #748182;
+            color: var( --p-text-color);
             padding: 30px 0;
             }
             .about-me-rest > p > span {
@@ -46,7 +46,7 @@
                 display: inline-block;
                 line-height: 25px;
                 padding: 0 5px;
-                background-color:black;
+                background-color: var(--primary-color);
                 border-radius: 5px;
                 position: relative;
                 font-weight: 400;
