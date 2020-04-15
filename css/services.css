@@ -1,0 +1,21 @@
+.services {
+    display: grid;
+    margin-top: 100px;
+    margin-bottom: 50px;
+    grid-template-columns: 1fr 1fr 1fr; 
+    grid-gap: 20px;
+    text-align: center;
+}
+.services > div > i {
+    font-size: 30px;
+    padding: 20px;
+    margin-top: 70px;
+    margin-bottom: 20px;
+}
+.services > div > h3 {
+
+}
+
+.services > div > p {
+    
+}
