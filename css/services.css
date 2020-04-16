@@ -1,0 +1,52 @@
+.services {
+    position: relative;
+    display: grid;
+    margin-top: 100px;
+    margin-bottom: 50px;
+    grid-template-columns: 1fr 1fr 1fr; 
+    grid-gap: 20px;
+    text-align: center;
+}
+.services > div > i {
+    display: inline-block;
+    font-size: 30px;
+    padding: 20px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+.services > div > i:hover {
+    background-color: black;
+    border-radius: 50%;
+    color: white;
+}
+
+.services > div > h3 {
+    display: inline-block;
+    width: 100%;
+    color: var(--h2-color);
+    font-weight: 800;
+    line-height: 30px;
+    font-size: 20px;
+}
+.services > div > p {
+    display: inline-block;
+    width: 100%;
+    color: var(--p-text-color);
+    padding:  10px 20px 30px;
+    line-height: 1.4;
+    
+}
+.services > h2 {
+ position: absolute;
+ left: 50%;
+ top: 0;
+ transform: translate(-50%, 0);
+}
+@media ( max-width: 900px ) {
+    .services {
+        display: grid;
+        grid-template-columns: 100%; 
+        grid-gap: 20px;
+        text-align: center;
+    }
+    }

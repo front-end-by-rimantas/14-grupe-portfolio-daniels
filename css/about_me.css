@@ -16,6 +16,14 @@
         width: 60%;
         padding: 0 10px;
     }
+         .about-me-rest >  h2 { 
+                font-size: 30px;
+                line-height: 1.1;
+                font-weight: 800;
+                font-family: 'Montserrat', sans-serif;
+                color: var(--h2-color); 
+            } 
+         
         .about-me-rest > h3 {
             color:  var( --p-text-color);
             font-weight: 100;
