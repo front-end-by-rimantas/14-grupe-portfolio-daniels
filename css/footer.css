@@ -1,0 +1,10 @@
+footer {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    height: 80px;
+    background-color: var(--primary-color);
+    color: var( --p-text-color);
+    line-height: 20px;
+    padding-top: 30px;
+}
