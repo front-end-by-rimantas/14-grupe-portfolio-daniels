@@ -1,0 +1,94 @@
+nav {
+    display: inline-block;
+    width: 100%;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    float: left;
+    padding: 40px 0px 0px 0px;
+    height: 70px;
+    position: relative;
+    z-index: 2;
+    cursor: pointer
+}
+    nav > .logo {
+        display: inline-block;
+        width: 100px;
+        float: left;
+        margin-top: -4px;
+        margin-left: 30px;
+        font-size: 19px;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 800;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        color: #fff;
+    }
+    nav > .links {
+        display: inline-block;
+        width: 650px;
+        float: right;
+        text-decoration: none;
+        margin-top: 5px;
+        margin-right: -40px;
+    }
+        nav > .links > a {
+            display: inline-block;
+            font-weight: 400;
+            margin: 0px 39px 0px 0px;
+            text-decoration: none;
+            text-align: center;
+            color: white;
+            font-size: 16px;
+            cursor:pointer;
+            pointer-events: auto;
+        }
+            nav > .links > a:first-of-type {
+                border-bottom: 2px solid white;
+            }
+
+    nav > .fa {
+        display: none;
+    }
+    
+    @media ( max-width: 900px ) {
+        nav > .links {
+            display: none;
+            width: 100%;
+            float: right;
+            text-align: center;
+            text-decoration: none;
+            padding-top: 40px;
+        }
+        nav > .fa {
+            display: inline-block;
+            float: right;
+            font-size: 25px;
+            font-weight: normal;
+        }
+        
+    }
+    @media ( max-width: 768px ) {
+        nav > .logo {
+            padding: 40px 0px 0px 0px;
+            margin: 0px;
+        }
+        nav > .fa {
+            display: inline-block;
+            float: right;
+            padding: 40px 0px 0px 35px;
+            margin: 0px;
+            font-size: 20px;
+            font-weight: normal;
+        }
+        nav {
+            padding: 40px;
+        }
+        nav > .links {
+            display: none;
+            width: 100%;
+            float: right;
+            text-align: center;
+            text-decoration: none;
+            padding-top: 40px;
+        }
+    }
