@@ -1,0 +1,89 @@
+.about_me {
+   margin-top: 100px;
+   margin-bottom: 50px;
+}
+    .about-me-img {
+        float: left;
+        width: 40%;
+        padding: 0 10px;
+    }
+        .about-me-img > img {
+            display: inline-block;
+            width: 100%;
+        }
+    .about-me-rest {
+        float: left;
+        width: 60%;
+        padding: 0 10px;
+    }
+         .about-me-rest >  h2 { 
+                font-size: 30px;
+                line-height: 1.1;
+                font-weight: 800;
+                font-family: 'Montserrat', sans-serif;
+                color: var(--h2-color); 
+            } 
+         
+        .about-me-rest > h3 {
+            color:  var( --p-text-color);
+            font-weight: 100;
+            padding-top: 5px;
+        }
+        .about-me-rest > p {
+            display: inline-block;
+            width: 100%;
+            line-height: 1.6;
+            font-size: 18px;
+            color: var( --p-text-color);
+            padding: 30px 0;
+            }
+            .about-me-rest > p > span {
+                font-weight: bold;
+            }
+            .about-me-rest > .skills {
+                display: inline-block;
+                width: 100%;
+            }
+            .about-me-rest > .skills > .progres-bar {
+                display: inline-block;
+                width: 100%;
+                padding-bottom: 30px;
+                color: #fff;
+            }
+            .progres-bar > .progres {
+                display: inline-block;
+                line-height: 25px;
+                padding: 0 5px;
+                background-color: var(--primary-color);
+                border-radius: 5px;
+                position: relative;
+                font-weight: 400;
+                animation: bar-animation 0.5s  linear ;
+            }
+            .progress-bar-proc {
+                position: absolute;
+                top: 0;
+                right: 5px;
+            }
+         .btn-white { 
+             margin-left: 10px;
+        }
+
+        @keyframes bar-animation {
+            0% {
+                width: 20%;
+            }
+            100% {
+                width: attr(data-width);
+            }
+        }
+        @media ( max-width: 900px ) {
+            .about-me-rest {
+                width: 100%;
+                margin-top: 50px;
+            }
+            .about-me-img {
+                width: 100%; 
+            }
+            }
+        

@@ -1,0 +1,33 @@
+.btn-black {
+    float: left; 
+    padding: 10px 35px;
+    background-color: var(--primary-color);
+    color: white;
+    border-radius: 10px;
+    line-height: 20px;
+    border: 1px solid var(--primary-color);
+}
+.btn-black:hover {
+    background-color: white;
+    color:var(--primary-color);;
+    cursor: pointer;
+    border: 1px solid var(--primary-color);
+    transition: 0.3s;
+    
+}
+.btn-white {
+    float: left; 
+    padding: 10px 35px;
+    background-color: white;
+    color:var(--primary-color);;
+    border-radius: 10px;
+    line-height: 20px;
+    border: 1px solid var(--primary-color);
+}
+.btn-white:hover {
+    background-color: var(--primary-color);;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+    border: 1px solid var(--primary-color);
+}
