@@ -46,3 +46,19 @@ function heroAnimation( list, wordIndex, letterIndex, actionType ) {
 }
 
 heroAnimation( heroAnime, 0, 0, 'add' );
+
+
+
+
+
+document.querySelector('.close').onclick = navBar;
+
+    function navBar() {
+        let bar = document.querySelector('.links');
+        
+            if ( bar.className === 'links') {
+                bar.className += ' active';
+            } else {
+                bar.className = 'links';
+            }
+    }
