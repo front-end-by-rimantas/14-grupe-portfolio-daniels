@@ -48,7 +48,7 @@ function heroAnimation( list, wordIndex, letterIndex, actionType ) {
 heroAnimation( heroAnime, 0, 0, 'add' );
 
 
-
+// NAV menu
 
 
 document.querySelector('.close').onclick = navBar;
