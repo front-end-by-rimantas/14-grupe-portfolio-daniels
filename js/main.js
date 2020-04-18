@@ -72,7 +72,7 @@ document.querySelector('.close').onclick = navBar;
           lett[i].style.color = '';
         
       
-        if (c > window.innerHeight) {
+        if (c > window.innerHeight - 1) {
           document.querySelector("#x").className = "fixed-nav";
           document.querySelector(".logo").style.color = 'black';
           document.querySelector(".close").style.color = 'black';
