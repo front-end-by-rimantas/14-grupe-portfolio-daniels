@@ -3,10 +3,8 @@ nav {
     width: 100%;
     height: 100px;
     padding: 18px 19px 0px 19px;
-    position: relative;
-    z-index: 1;
 }
-    nav > .logo {
+    nav > #x > .logo {
         display: inline-block;
         float: left;
         margin-top: calc(50px - 25px);
@@ -15,92 +13,141 @@ nav {
         color: white;
         font-weight: bold;
         letter-spacing: 2px;
+        position: relative;
         cursor: pointer;
+        z-index: 1;
 
     }
-    nav > .links {
+    nav > #x > .links {
         display: inline-block;
         float: right;
         margin-top: calc(50px - 25px);
         font-size: 18px;
         line-height: 25px;
     }
-    nav > .links > a {
+    nav > #x > .links > a {
         display: inline-block;
         text-decoration: none;
-        color: white;
         margin-right: 25px;
         letter-spacing: 1px;
+        color: white;
+        position: relative;
         cursor: pointer;
+        z-index: 1;
+
     }
-    nav > .links > a:first-of-type {
+    nav > #x > .links > a:first-of-type {
         border-bottom: 2px solid white;
     }
-    nav > .close {
+    nav > #x > .close {
         display: none;
     }
 
+    .fixed-nav  {
+        position: fixed;
+        width: 100%;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        background-color: white;
+        padding: 0px 150px 20px 150px;
+        color: black;
+        transition: 0.5s;
+      }
+
     @media ( max-width: 900px ) {
-        nav > .logo {
+        nav > #x > .logo {
             margin-top: calc(50px - 25px);
             font-size: 19px;
+            margin-left: 55px;
             float: left;
         }
-        nav > .links {
+        nav > #x > .links {
             display: inline-block;
             font-size: 15px;
+            margin-top: 23px;
+            margin-right: 55px;
+            padding: 0px;
+            z-index: 1;
         }
-        nav > .links > a{
+        nav > #x > .links > a{
             display: inline-block;
             padding: 0;
             margin: 0;
             font-size: 15px;
-            margin: 0px 0px 0px 25px;
+            margin: 0px 0px 0px 10px;
         }
-        nav > .links > a:last-of-type {
+        nav > #x > .links > a:last-of-type {
             display: inline-block;
             margin-right: 10px;
         }
+        .fixed-nav  {
+            position: fixed;
+            width: 100%;
+            height: 75px;
+            top: 0;
+            left: 0;
+            z-index: 1;
+            background-color: white;
+            color: black;
+            transition: 0s;
+            padding: 0px 0px 0px 10px;
+            /* transition: 1s; */
+          }
 }
     @media ( max-width: 768px ) {
-        nav > .logo {
+        nav > #x > .logo {
             margin-top: calc(50px - 15px);
+            margin-left: 20px;
         }
-        nav > .links {
+        nav > #x > .links {
             display: inline-block;
             width: 100%;
             height: 0;
             position: absolute;
-            top: 50px;
+            top: 70px;
             left: 0;
             background-color: white;
             text-align: center;
             overflow: hidden;
             transition: 0.5s;
         }
-        nav > .active {
+        nav > #x > .active {
             height: 420px;
         }
-        nav > .links > a {
+        nav > #x > .links > a {
             display: inline-block;
             width: 100%;
             padding: 14px;
-            color: black;
+            color: black !important;
             margin: 0px 0px 0px 0px;
             
 
         }
-        nav > .close {
+        nav > #x > .close {
             display: inline-block;
-            color: white;
+            /* color: white !important; */
             margin-top: calc(50px - 15px);
             float: right;
             font-size: 25px;
             position: absolute;
             top: 0;
-            right: 20px;
+            right: 30px;
             overflow: hidden;
             cursor: pointer;
             z-index: 1;
         }
+        .fixed-nav  {
+            position: fixed;
+            width: 100%;
+            height: 95px;
+            top: 0;
+            left: 0;
+            z-index: 1;
+            background-color: white;
+            color: black;
+            transition: 0s;
+            padding: 0px 0px 0px 0px;
+            transition: 1s;
+          }
     }
