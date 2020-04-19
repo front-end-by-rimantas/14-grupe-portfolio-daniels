@@ -70,6 +70,7 @@ document.querySelector('.close').onclick = navBar;
 
         for (let i=0; i < 7; i++) {
           lett[i].style.color = '';
+
         
       
         if (c > window.innerHeight - 1) {
@@ -77,15 +78,18 @@ document.querySelector('.close').onclick = navBar;
           document.querySelector(".logo").style.color = 'black';
           document.querySelector(".close").style.color = 'black';
         lett[i].style.color = 'black';
+        lett[i].classList.add('hover');
     
         } else {
           document.querySelector("#x").className = "";
           document.querySelector(".logo").style.color = 'white';
           document.querySelector(".close").style.color = 'white';
             lett[i].style.color = 'white';
+            lett[i].style.borderBottom = '';
+            lett[i].classList.remove('hover');
         }
         
         
       }
     }
-
+    

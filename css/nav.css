@@ -4,6 +4,9 @@ nav {
     height: 115px;
     padding: 18px 19px 0px 19px;
 }
+.border {
+    border: 1px solid red;
+}
     nav > #x > .logo {
         display: inline-block;
         float: left;
@@ -34,10 +37,12 @@ nav {
         position: relative;
         cursor: pointer;
         z-index: 1;
+        padding-bottom: 5px;
+        margin-bottom: -15px;
 
     }
-    nav > #x > .links > a:first-of-type {
-        border-bottom: 2px solid white;
+    .hover:hover {
+        border-bottom: 2px solid black;
     }
     nav > #x > .close {
         display: none;
@@ -50,7 +55,7 @@ nav {
         left: 0;
         z-index: 1;
         background-color: white;
-        padding: 0px 150px 20px 150px;
+        padding: 0px 130px 20px 130px;
         color: black;
         transition: 0.5s;
       }
