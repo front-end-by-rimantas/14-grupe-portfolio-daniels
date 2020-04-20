@@ -3,10 +3,12 @@ nav {
     width: 100%;
     height: 115px;
     padding: 18px 19px 0px 19px;
+    /* position: fixed; */
 }
-.border {
+.active {
     border: 1px solid red;
 }
+
     nav > #x > .logo {
         display: inline-block;
         float: left;
@@ -41,13 +43,16 @@ nav {
         margin-bottom: -15px;
 
     }
-    .hover:hover {
-        border-bottom: 2px solid black;
+    .hover:hover
+    {
+        border-bottom: 2px solid orange;
     }
     nav > #x > .close {
         display: none;
     }
-
+    .border {
+        border: 2px solid purple;
+    }
     .fixed-nav  {
         position: fixed;
         width: 100%;
@@ -97,7 +102,6 @@ nav {
             color: black;
             transition: 0s;
             padding: 0px 0px 0px 10px;
-            /* transition: 1s; */
           }
 }
     @media ( max-width: 768px ) {
