@@ -1,121 +1,162 @@
 nav {
     display: inline-block;
     width: 100%;
-    color: white;
-    font-family: 'Poppins', sans-serif;
-    float: left;
-    padding: 40px 0px 0px 0px;
-    height: 70px;
-    position: relative;
-    z-index: 2;
-    cursor: pointer;
+    height: 115px;
+    padding: 18px 19px 0px 19px;
+    /* position: fixed; */
 }
-    nav > .logo {
-        display: inline-block;
-        width: 100px;
-        float: left;
-        margin-top: -4px;
-        margin-left: 30px;
-        font-size: 19px;
-        font-family: 'Poppins', sans-serif;
-        font-weight: 800;
-        text-transform: uppercase;
-        letter-spacing: 1px;
-        color: #fff;
-    }
-    nav > .links {
-        display: inline-block;
-        width: 650px;
-        float: right;
-        text-decoration: none;
-        margin-top: 5px;
-        margin-right: -40px;
-    }
-        nav > .links > a {
-            display: inline-block;
-            font-weight: 400;
-            margin: 0px 39px 0px 0px;
-            text-decoration: none;
-            text-align: center;
-            color: white;
-            font-size: 16px;
-            cursor:pointer;
-            pointer-events: auto;
-        }
-            nav > .links > a:first-of-type {
-                border-bottom: 2px solid white;
-            }
+.active {
+    border: 1px solid red;
+}
 
-    nav > .fa {
+    nav > #x > .logo {
+        display: inline-block;
+        float: left;
+        margin-top: calc(50px - 25px);
+        font-size: 22px;
+        line-height: 25px;
+        color: white;
+        font-weight: bold;
+        letter-spacing: 2px;
+        position: relative;
+        cursor: pointer;
+        z-index: 1;
+
+    }
+    nav > #x > .links {
+        display: inline-block;
+        float: right;
+        margin-top: calc(50px - 25px);
+        font-size: 18px;
+        line-height: 25px;
+    }
+    nav > #x > .links > a {
+        display: inline-block;
+        text-decoration: none;
+        margin-right: 25px;
+        letter-spacing: 1px;
+        color: white;
+        position: relative;
+        cursor: pointer;
+        z-index: 1;
+        padding-bottom: 5px;
+        margin-bottom: -15px;
+
+    }
+    .hover:hover
+    {
+        border-bottom: 2px solid orange;
+    }
+    nav > #x > .close {
         display: none;
     }
-    @media ( max-width: 1300px ) {
-        .container  {
-            width: 1150px;
-            margin: 0 calc(50% - 575px);
-        }
+    .border {
+        border: 2px solid purple;
     }
-    @media ( max-width: 1200px ) {
-        .container  {
-            width: 1000px;
-            margin: 0 calc(50% - 500px);
-        }
-    }
-    @media ( max-width: 1100px ) {
-        .container  {
-            width: 800px;
-            margin: 0 calc(50% - 400px);
-        }
-    }
+    .fixed-nav  {
+        position: fixed;
+        width: 100%;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        background-color: white;
+        padding: 0px 130px 20px 130px;
+        color: black;
+        transition: 0.5s;
+      }
 
     @media ( max-width: 900px ) {
-        .container  {
-            width: 700px;
-            margin: 0 calc(50% - 350px);
+        nav > #x > .logo {
+            margin-top: calc(50px - 25px);
+            font-size: 19px;
+            margin-left: 55px;
+            float: left;
         }
-        nav > .links {
-            display: none;
-            width: 100%;
-            float: right;
-            text-align: center;
-            text-decoration: none;
-            padding-top: 40px;
-        }
-        nav > .fa {
+        nav > #x > .links {
             display: inline-block;
+            font-size: 15px;
+            margin-top: 23px;
+            margin-right: 55px;
+            padding: 0px;
+            z-index: 1;
+        }
+        nav > #x > .links > a{
+            display: inline-block;
+            padding: 0;
+            margin: 0;
+            font-size: 15px;
+            margin: 0px 0px 0px 10px;
+        }
+        nav > #x > .links > a:last-of-type {
+            display: inline-block;
+            margin-right: 10px;
+        }
+        .fixed-nav  {
+            position: fixed;
+            width: 100%;
+            height: 75px;
+            top: 0;
+            left: 0;
+            z-index: 1;
+            background-color: white;
+            color: black;
+            transition: 0s;
+            padding: 0px 0px 0px 10px;
+          }
+}
+    @media ( max-width: 768px ) {
+        nav > #x > .logo {
+            margin-top: calc(50px - 15px);
+            margin-left: 20px;
+        }
+        nav > #x > .links {
+            display: inline-block;
+            width: 100%;
+            height: 0;
+            position: absolute;
+            top: 70px;
+            left: 0;
+            background-color: white;
+            text-align: center;
+            overflow: hidden;
+            transition: 0.5s;
+        }
+        nav > #x > .active {
+            height: 420px;
+        }
+        nav > #x > .links > a {
+            display: inline-block;
+            width: 100%;
+            padding: 14px;
+            color: black !important;
+            margin: 0px 0px 0px 0px;
+            
+
+        }
+        nav > #x > .close {
+            display: inline-block;
+            color: white;
+            margin-top: calc(50px - 15px);
             float: right;
             font-size: 25px;
-            font-weight: normal;
+            position: absolute;
+            top: 0;
+            right: 30px;
+            overflow: hidden;
+            cursor: pointer;
+            z-index: 1;
         }
-        
-    }
-    @media ( max-width: 768px ) {
-        .container  {
+        .fixed-nav  {
+            position: fixed;
             width: 100%;
-            margin: 0;
-            padding: 0 20px;
-        }
-        nav > .logo {
-            padding: 40px 0px 0px 0px;
-            margin: 0px;
-        }
-        nav > .fa {
-            display: inline-block;
-            float: right;
-            padding: 40px 0px 0px 35px;
-            margin: 0px;
-            font-size: 20px;
-            font-weight: normal;
-        }
-        nav {
-            padding: 40px;
-        }
-        nav > .links {
-            display: none;
-            width: 100%;
-            float: right;
-            text-align: center;
-            text-decoration: none;
-            padding-top: 40px;
-        }
+            height: 95px;
+            top: 0;
+            left: 0;
+            z-index: 1;
+            background-color: white;
+            color: black;
+            transition: 0s;
+            padding: 0px 0px 0px 0px;
+            transition: 1s;
+          }
     }
