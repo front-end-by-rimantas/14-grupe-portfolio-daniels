@@ -108,4 +108,24 @@ $(document).ready(function () {
 
 
 
+  // tap tap tap :D
 
+
+  let close = document.querySelector('.close').onclick = tapClose;
+
+
+    function tapClose() {
+
+            let tap = document.querySelector('.links');
+            
+                if ( tap.className === 'links') {
+                    tap.className += ' tap';
+                    // document.querySelector('body').style.overflow = 'hidden';
+                } else {
+                    tap.className = 'links';
+                    // document.querySelector('body').style.overflow = 'auto';
+                    
+                }
+        
+    }
+    tapClose();
