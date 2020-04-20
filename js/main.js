@@ -51,47 +51,61 @@ heroAnimation( heroAnime, 0, 0, 'add' );
 // NAV menu
 
 
-document.querySelector('.close').onclick = navBar;
 
-    function navBar() {
-        let bar = document.querySelector('.links');
-        
-            if ( bar.className === 'links') {
-                bar.className += ' active';
-            } else {
-                bar.className = 'links';
-            }
-    }
-// Sticky NAV bar
+window.onscroll = function() {nav_position()};
 
-    window.onscroll = () => {
-        let c = window.scrollY;
-        let lett = document.querySelectorAll('a');
+let header = document.querySelector('header').offsetHeight;
+let nav = document.querySelector('nav');
 
-        for (let i=0; i < 7; i++) {
-          lett[i].style.color = '';
+function nav_position() {
+  if (window.pageYOffset > header - 1) {
+    nav.classList.add("sticky");
+  } else {
+    nav.classList.remove("sticky");
+  }
+}
 
-        
-      
-        if (c > window.innerHeight - 1) {
-          document.querySelector("#x").className = "fixed-nav";
-          document.querySelector(".logo").style.color = 'black';
-          document.querySelector(".close").style.color = 'black';
-        lett[i].style.color = 'black';
-        lett[i].classList.add('hover');
-    
-        } else {
-          document.querySelector("#x").className = "";
-          document.querySelector(".logo").style.color = 'white';
-          document.querySelector(".close").style.color = 'white';
-            lett[i].style.color = 'white';
-            lett[i].style.borderBottom = '';
-            lett[i].classList.remove('hover');
-        }
-        
-        
-      }
-    }
+
+/// Scroll spy 
+
+$(document).ready(function () {
+
+    $(document).on("scroll", onScroll);
+  
+  $('a[href^="#"]').on('click', function (e) {
+        e.preventDefault();
+          $(document).off("scroll");
+           $('a').each(function () {
+              $(this).removeClass('active');
+          })
+          $(this).addClass('active');
+           var target = this.hash,
+           menu = target;
+           $target = $(target);
+         $('html, body').stop().animate({
+              'scrollTop': $target.offset().top+2
+          }, 600, 'swing', function () {
+              window.location.hash = target;
+              $(document).on("scroll", onScroll);
+          });
+      });
+  });
+  
+  function onScroll(event){
+      var scrollPos = $(document).scrollTop();
+      $('nav a').each(function () {
+          var currLink = $(this);
+         var refElement = $(currLink.attr("href"));
+          if (refElement.position().top <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
+              $('#home a').removeClass("active");
+              currLink.addClass("active");
+          }
+          else{
+              currLink.removeClass("active");
+          }
+      });
+  }
+
 
 
 
