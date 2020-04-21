@@ -20,6 +20,7 @@ h1 {
             display: inline-block;
             height: 0px;
             color: black;
+            z-index: 1;
         }
     .item {
         display: inline-block;
