@@ -65,6 +65,9 @@ function nav_position() {
   }
 }
 
+// refresh
+
+window.onresize = function(){ location.reload(); }
 
 /// Scroll spy 
 
@@ -109,3 +112,43 @@ $(document).ready(function () {
 
 
 
+  // tap tap tap :D
+
+
+  let close = document.querySelector('.close').onclick = tapClose;
+
+
+    function tapClose() {
+
+            let tap = document.querySelector('.links');
+            
+                if ( tap.className === 'links') {
+                    tap.className += ' tap';
+                } else {
+                    tap.className = 'links';
+                    
+                }
+        
+    }
+    tapClose();
+
+
+    
+
+
+
+
+    let tap = document.querySelector('body');
+
+    let links = document.querySelectorAll('.links a');
+    
+    for (let i=0; i < links.length; i++) {
+        links[i].addEventListener('click', click) 
+    }
+    function click() {
+        document.querySelector('.links').classList.add('tap');
+        
+    }
+       
+
+    
