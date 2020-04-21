@@ -120,12 +120,28 @@ $(document).ready(function () {
             
                 if ( tap.className === 'links') {
                     tap.className += ' tap';
-                    // document.querySelector('body').style.overflow = 'hidden';
                 } else {
-                    tap.className = 'links';
-                    // document.querySelector('body').style.overflow = 'auto';
                     
                 }
         
     }
     tapClose();
+
+
+
+
+    let tap = document.querySelector('body');
+
+    let links = document.querySelectorAll('.links a');
+    
+    for (let i=0; i < links.length; i++) {
+        links[i].addEventListener('click', click) 
+    }
+    function click() {
+        document.querySelector('.links').classList.add('tap');
+        console.log(this);
+        
+    }
+       
+
+    
