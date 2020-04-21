@@ -5,13 +5,16 @@
     text-align: center;
     color: white;
     float: left; 
-    margin-top: calc(50vh - 210px);
+    margin-top: calc(50vh - 280px);
     position: relative;
     font-weight: 200; 
     overflow: hidden;
 }
-    h1 {
-        font-size: 50px;
+    .hero_section > h1 {
+        color: white;
+        font-size: 50px !important;
+        letter-spacing: 1px;
+        font-weight: bold;
     }
         .who {
             display: inline-block;
