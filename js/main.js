@@ -65,6 +65,9 @@ function nav_position() {
   }
 }
 
+// refresh
+
+window.onresize = function(){ location.reload(); }
 
 /// Scroll spy 
 
@@ -108,6 +111,7 @@ $(document).ready(function () {
 
 
 
+
   // tap tap tap :D
 
 
@@ -121,11 +125,15 @@ $(document).ready(function () {
                 if ( tap.className === 'links') {
                     tap.className += ' tap';
                 } else {
+                    tap.className = 'links';
                     
                 }
         
     }
     tapClose();
+
+
+    
 
 
 
@@ -139,7 +147,6 @@ $(document).ready(function () {
     }
     function click() {
         document.querySelector('.links').classList.add('tap');
-        console.log(this);
         
     }
        
