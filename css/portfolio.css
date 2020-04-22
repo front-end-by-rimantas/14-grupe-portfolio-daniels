@@ -1,8 +1,9 @@
 .portfolio {
     display: inline-block;
     text-align: center;
-    padding-top: 110px;
-    margin-bottom: 50px;
+    padding-top: 70px;
+    margin-top: 50px;
+    margin-bottom: 40px;
 }
     .portfolio > .filter {
         display: flex;
