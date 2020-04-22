@@ -39,6 +39,7 @@
         right: 10px;
         opacity: 0;
         padding-top: calc(50% - 60px);
+        transition: 1s;
 
     }
     .gallery-overlay:hover{ 

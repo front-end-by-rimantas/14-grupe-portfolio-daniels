@@ -2,7 +2,7 @@
     position: relative;
     display: inline-block;
     padding-top: 70px;
-    margin-top: 50px;
+    padding-bottom: 70px;
     text-align: center;
 
 }
@@ -13,10 +13,6 @@
     margin: 12.5px;
     padding: 20px;
 }
-    /* .container .services {
-        display: inline-block;
-        margin-top: 200px;
-    } */
 .services > div > i {
     display: inline-block;
     font-size: 30px;
@@ -49,8 +45,7 @@
 .services > h2 {
  position: absolute;
  left: 50%;
- /* top: 90px; */
- margin-top: 30px;
+ margin-top: 15px;
  transform: translate(-50%, 0);
 }
 @media ( max-width: 900px ) {
