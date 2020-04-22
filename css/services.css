@@ -48,6 +48,20 @@
  margin-top: 15px;
  transform: translate(-50%, 0);
 }
+.services > h2::after {
+    position: absolute;
+    content: "";
+    width: 98%;
+    height: 50%;
+    background: url(../img/dots.png);
+    top: 10px;
+    right: 5px;
+    position: absolute;
+    top: 25px;
+    left: -20px;
+    z-index: -1;
+    display: inline-block;
+   }
 @media ( max-width: 900px ) {
     .services {
         display: inline-block;

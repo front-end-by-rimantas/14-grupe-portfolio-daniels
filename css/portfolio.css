@@ -5,6 +5,31 @@
     margin-top: 50px;
     margin-bottom: 40px;
 }
+    .portfolio > h2 {
+        position: relative;
+        display: inline-block;
+        width: 180px;
+        height: 40px;
+        /* color: darkkhaki; */
+
+    }
+    .portfolio > h2::after {
+        position: absolute;
+        content: "";
+        width: 98%;
+        height: 100%;
+        background: url(../img/dots.png);
+        top: 10px;
+        right: 5px;
+        position: absolute;
+        top: 15px;
+        left: -20px;
+        z-index: -1;
+        display: inline-block;
+    }
+
+
+
     .portfolio > .filter {
         display: flex;
         column-gap: 1rem;
