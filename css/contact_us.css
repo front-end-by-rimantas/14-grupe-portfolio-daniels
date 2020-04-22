@@ -1,0 +1,222 @@
+.contact_us {
+    display: inline-block;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+    .contact_box {
+        display: inline-block;
+        width: calc(80% / 3);
+        justify-content: center;
+        height: 250px;
+        float: left;
+        margin-top: 80px;
+        padding: 50px;
+    }
+    .contact_box:first-of-type {
+        margin-left: 140px;
+    }
+        .contact_box > .fa {
+            display: inline-block;
+            width: 70px;
+            height: 70px;
+            text-align: center;
+            background-color: rgb(214, 214, 214);
+            float: left;
+            margin-left: calc(50% - 35px);
+            font-size: 34px;
+            border-radius: 50%;
+            padding-top: 18px;
+
+        }
+        .contact_box > .fa:hover { 
+            background-color: rgb(92, 92, 92);
+            color: white;
+        }
+        .contact_box > h6 {
+            display: inline-block;
+            width: 100%;
+            height: 50px;
+            text-align: center;
+            margin-top: 20px;
+            color: black;
+            font-size: 20px;
+            font-weight: 500;
+        }
+        .contact_box > p {
+            display: inline-block;
+            width: 100%;
+            height: 50px;
+            text-align: center;
+            margin-top: 1px;
+            color: rgb(95, 95, 95);
+            font-size: 15px;
+            font-weight: 400;
+        }
+
+    @media ( max-width: 1300px ) {
+
+}
+    @media ( max-width: 1200px ) {
+
+    }
+    @media ( max-width: 1100px ) {
+
+    }
+    @media ( max-width: 900px ) {
+
+    }
+    @media ( max-width: 768px ) {
+        .contact_box:first-of-type {
+            margin-left: 0px;
+        }
+        .contact_box {
+            display: inline-block;
+            width: 100%;
+            height: 100%;
+            justify-content: center;
+            height: 230px;
+            float: left;
+            
+        }
+    }
+
+    .contact form {
+        display: inline-block;
+        width: 70%;
+        margin-left: calc(50% - 35%);
+        padding-top: 30px;
+    }
+    .contact .two-in-row {
+            display: inline-block;
+            width: 45%;
+            float: left;
+            background-color:  #F7F7F7;
+            border-radius: 5px;
+            font-size: 15px;
+            line-height: 20px;
+            padding: 10px;
+            border: none;
+        }
+        .contact .two-in-row:last-of-type {
+            margin-left: 10%;
+        }
+        .contact form > textarea {
+            display: inline-block;
+            width: 100%;
+            margin-bottom: 20px;
+            resize: vertical;
+            margin-top: 10px;
+            background-color:  #F7F7F7;
+            border-radius: 5px;
+            min-height: 130px;
+            max-height: 350px;
+            font-size: 15px;
+            line-height: 20px;
+            padding: 10px;
+            border: none;
+            
+        }
+    #submit {
+        display: inline-block;
+        width: 100px;
+        background-color: rgb(41, 41, 41);
+        color: white;
+        float: left;
+        margin-bottom: 100px;
+    }
+    #submit:hover {
+        background-color: rgb(238, 238, 238);
+        border: 1px solid black;
+        color: black;
+    }
+@media (max-width: 1100px) {
+    .contact form {
+        width: 800px;
+        padding-top: 30px;
+    }
+    .contact .address {
+        display: inline-block;
+        width: 25%;
+        margin: 20px 30px;
+    }
+    .contact .email {
+        display: inline-block;
+        width: 25%;
+        margin: 20px 30px;
+        }
+    .contact .phone {
+        display: inline-block;
+        width: 25%;
+        margin: 20px 30px;
+    }
+}
+@media (max-width: 900px) {
+    .contact form {
+                width: 70%;
+        padding-top: 30px;
+    }
+    .contact .address {
+        display: inline-block;
+        width: 25%;
+        margin: 20px 10px;
+    }
+    .contact .email {
+        display: inline-block;
+        width: 25%;
+        margin: 20px 10px;
+        }
+    .contact .phone {
+        display: inline-block;
+        width: 25%;
+        margin: 20px 10px;
+    }
+}
+@media (max-width: 800px) {
+         .contact form {
+        display: inline-block;
+        width: 100%;
+        margin-left: 0;
+        padding-top: 30px;
+    }
+    .contact .two-in-row {
+        display: inline-block;
+        width: 100%;
+        float: left;
+    }
+    .contact .two-in-row:last-of-type {
+        margin-left: 0;
+        margin: 10px 0;
+    }
+    .contact form > textarea {
+        width: 100%;
+        margin-bottom: 20px;
+        resize: vertical;
+        margin-top: 10px;
+        background-color:  #F7F7F7;
+        border-radius: 5px;
+        min-height: 130px;
+        max-height: 350px;
+        font-size: 15px;
+        line-height: 20px;
+        border: none;
+        padding: 15px;
+    }
+    .contact .address {
+        display: inline-block;
+        width: 100%;
+        margin: 20px 0;
+    }
+    .contact .email {
+        display: inline-block;
+        width: 100%;
+        margin: 20px 0;
+        }
+    .contact .phone {
+        display: inline-block;
+        width: 100%;
+        margin: 20px 0;
+    }
+    #submit {
+   margin-left: 20px;
+    }
+}

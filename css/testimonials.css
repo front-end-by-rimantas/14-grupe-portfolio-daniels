@@ -1,0 +1,131 @@
+.testimonials {
+    display: inline-block;
+    width: 100%;
+    justify-content: center;
+    overflow: hidden;
+    padding-top: 10px;
+    margin-top: 10px;
+}
+h1 {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    font-weight: bold;
+    font-size: 40px;
+    padding-top: 15px;
+    margin-top: 80px;
+    justify-content: center;
+    font-family: 'Montserrat', sans-serif;
+    color: var(--h2-color); 
+}
+        .carousel-indicators {
+            display: inline-block;
+            height: 0px;
+            color: black;
+            z-index: 1;
+        }
+    .item {
+        display: inline-block;
+        border: 0;
+        height: 500px;
+        padding-top: 80px;
+        justify-content: center;
+        text-align: center;
+
+    }
+    .item > img {
+        display: inline-block;
+        width: 100px;
+        height: 100px;
+        margin-left: calc(50% - 50px);
+        border-radius: 50%;
+    }
+    .item p {
+        display: inline-block;
+        width: 70%;
+        text-align: center;
+        letter-spacing: 1px;
+        color: #748182;
+        font-size: 18px;
+        padding-top: 40px;
+
+
+    }
+    .item h6 {
+        display: inline-block;
+        width: 100%;
+        color: black;
+        text-align: center;
+        font-size: 20px;
+        padding-top: 40px;
+       
+    }
+    .item span {
+        display: inline-block;
+        width: 100%;
+        color: grey;
+        text-align: center;
+        font-size: 12px;
+        font-weight: bold;
+    }
+    .carousel-indicators > li {
+        background-color: black;
+    }
+    .carousel-indicators > li:hover {
+        background-color: rgb(255, 0, 0);
+    }
+    .carousel-indicators > .active {
+        background-color: rgb(255, 0, 0);
+    }
+
+
+    @media ( max-width: 1300px ) {
+        .testimonials {
+            display: inline-block;
+            width: 1150px;
+            overflow: hidden;
+        }
+}
+@media ( max-width: 1200px ) {
+    .testimonials {
+        display: inline-block;
+        width: 1000px;
+        overflow: hidden;
+    }
+}
+@media ( max-width: 1100px ) {
+    .testimonials {
+        display: inline-block;
+        width: 800px;
+        overflow: hidden;
+    }
+}
+@media ( max-width: 900px ) {
+    .testimonials {
+        display: inline-block;
+        width: 700px;
+        overflow: hidden;
+    }
+}
+@media ( max-width: 768px ) {
+    .testimonials {
+        display: inline-block;
+        width: 100%;
+        margin-top: 50px;
+        overflow: hidden;
+    }
+    .item {
+        display: inline-block;
+        width: 100%;
+        height: 500px;
+        padding-top: 40px;
+        text-align: center;
+    }
+    .carousel-indicators {
+        display: inline-block;
+        height: 0px;
+        margin-bottom: 20px;
+        color: black;
+    }
+}
