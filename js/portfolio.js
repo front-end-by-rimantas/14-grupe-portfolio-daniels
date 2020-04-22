@@ -1,31 +1,31 @@
 const portfolioDataArray =  [
     {
-        img: "../img/gallery/1.jpg",
+        img: "./img/gallery/1.jpg",
         name: 'WEB DESIGN',
         category: ['All','Graphic']
     },
     {
-        img: "../img/gallery/2.jpg",
+        img: "./img/gallery/2.jpg",
         name: 'WEB DESIGN',
         category: ['All','Design']
     },
     {
-        img: "../img/gallery/3.jpg",
+        img: "./img/gallery/3.jpg",
         name: 'WEB DESIGN',
         category: ['All','Graphic']
     },
     {
-        img: "../img/gallery/4.jpg",
+        img: "./img/gallery/4.jpg",
         name: 'WEB DESIGN',
         category: ['All','Brand']
     },
     {
-        img: "../img/gallery/5.jpg",
+        img: "./img/gallery/5.jpg",
         name: 'WEB DESIGN',
         category: ['All','Graphic','Design' ]
     },
     {
-        img: "../img/gallery/6.jpg",
+        img: "./img/gallery/6.jpg",
         name: 'WEB DESIGN',
         category: ['All','Brand']
     },
