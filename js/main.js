@@ -67,7 +67,7 @@ function nav_position() {
 
 // refresh
 
-window.onresize = function(){ location.reload(); }
+// window.onresize = function(){ location.reload(); }
 
 /// Scroll spy 
 
