@@ -13,7 +13,6 @@ nav * {
     color: black !important;
     padding: 0px !important;
     margin-top: 16px !important;
-    
 }
 .sticky {
     position: fixed;
@@ -28,7 +27,6 @@ nav * {
 .active {
     border-bottom: 2px solid black;
 }
-
     .logo {
         display: inline-block;
         float: left;
@@ -50,7 +48,6 @@ nav * {
         float: right;
         margin-top: calc((115px / 2) - 18px);
         margin-right: 10px;
-
     }
         .links > a {
             text-decoration: none;
@@ -71,12 +68,8 @@ nav * {
             border-bottom: 2px solid white;
         }
 
-
-
         @media ( max-width: 1300px ) {
-            nav {
-                padding: 0px;
-            }
+
         }
         @media ( max-width: 1200px ) {
 

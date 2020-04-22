@@ -5,7 +5,7 @@
     text-align: center;
     color: white;
     float: left; 
-    margin-top: calc(50vh - 280px);
+    margin-top: calc(50vh - 200px);
     padding-bottom: 100px;
     position: relative;
     font-weight: 200; 
@@ -45,7 +45,7 @@
             z-index: 1;
         }
         .social > .fa:hover {
-            background-color: rgb(59, 59, 59);
+            background-color: rgb(255, 164, 164);
         }
 
 
@@ -78,7 +78,7 @@
         text-align: center;
         color: white;
         float: left; 
-        margin-top: calc(50vh - 270px);
+        margin-top: calc(50vh - 170px);
         position: relative;
         font-weight: 200; 
     }
