@@ -58,7 +58,7 @@ let header = document.querySelector('header').offsetHeight;
 let nav = document.querySelector('nav');
 
 function nav_position() {
-  if (window.pageYOffset > header - 1) {
+  if (window.pageYOffset >= header) {
     nav.classList.add("sticky");
   } else {
     nav.classList.remove("sticky");
@@ -87,8 +87,8 @@ $(document).ready(function () {
            $target = $(target);
          $('html, body').stop().animate({
               'scrollTop': $target.offset().top+2
-          }, 600, 'swing', function () {
-              window.location.hash = target;
+          }, 300, 'swing', function () {
+              window.location.hash = target + 2;
               $(document).on("scroll", onScroll);
           });
       });
