@@ -5,7 +5,7 @@
     text-align: center;
     color: white;
     float: left; 
-    margin-top: calc(50vh - 110px) !important;
+    margin-top: calc(50vh - 110px);
     padding-bottom: 100px;
     position: relative;
     font-weight: 200; 
@@ -13,7 +13,7 @@
 }
     .hero_section > h1 {
         color: white;
-        font-size: 50px !important;
+        font-size: 50px;
         letter-spacing: 1px;
         font-weight: bold;
     }
@@ -78,7 +78,7 @@
         text-align: center;
         color: white;
         float: left; 
-        margin-top: calc(50vh - 110px) !important;
+        margin-top: calc(50vh - 110px);
         position: relative;
         font-weight: 200; 
     }

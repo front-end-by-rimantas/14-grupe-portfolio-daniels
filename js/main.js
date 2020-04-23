@@ -55,19 +55,17 @@ heroAnimation( heroAnime, 0, 0, 'add' );
 window.onscroll = function() {nav_position()};
 
 let header = document.querySelector('header').offsetHeight;
-let nav = document.querySelector('nav');
+let nav = document.querySelector('.absolute');
 
 function nav_position() {
   if (window.pageYOffset >= header) {
-    nav.classList.add("sticky");
-  } else {
-    nav.classList.remove("sticky");
+    nav.classList.remove("absolute");
+    nav.classList.add("fixed");
+  } else { 
+    nav.classList.remove("fixed");
+    nav.classList.add("absolute");
   }
 }
-
-// refresh
-
-// window.onresize = function(){ location.reload(); }
 
 /// Scroll spy 
 
@@ -100,7 +98,7 @@ $(document).ready(function () {
           var currLink = $(this);
          var refElement = $(currLink.attr("href"));
           if (refElement.position().top <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
-              $('#home a').removeClass("active");
+              $('nav a').removeClass("active");
               currLink.addClass("active");
           }
           else{
@@ -149,6 +147,7 @@ $(document).ready(function () {
         document.querySelector('.links').classList.add('tap');
         
     }
+
        
 
     
