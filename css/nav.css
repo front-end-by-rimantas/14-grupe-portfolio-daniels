@@ -92,6 +92,7 @@
         display: inline-block;
     }
         .close > .fa {
+            display: inline-block;
             color: rgb(255, 255, 255);
             font-size: 25px;
             line-height: 22px;
@@ -109,21 +110,38 @@
         float: left;
         padding: 18px 10px 0px 20px;
     }
-    .fixed a {
-        margin-right: 10px;
-    }
-    .close {
-        display: inline-block;
-    }
+    
+        .fixed a {
+            margin-right: 10px;
+        }
+        .close {
+            display: inline-block;
+            position: relative;
+            z-index: 1;
+        }
 
         .fixed .fa {
-            position: relative;
+            /* position: relative; */
             display: inline-block;
             color: rgb(0, 0, 0);
         }
     .links {
         display: none;
     }
+    .tap {
+        position: absolute;
+        display: inline-block;
+        top: 80px;
+        left: 0;
+        right: 0;
+    }
+        .tap a {
+            display: inline-block;
+            width: 100%;
+            float: left;
+            text-align: center;
+            background-color: wheat;
+        }
         .logo {
             font-size: 20px;
         }

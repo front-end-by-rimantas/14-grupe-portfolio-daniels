@@ -118,6 +118,7 @@ $(document).ready(function () {
 
     function tapClose() {
 
+
             let tap = document.querySelector('.links');
             
                 if ( tap.className === 'links') {
@@ -128,7 +129,7 @@ $(document).ready(function () {
                 }
         
     }
-    tapClose();
+    // tapClose();
 
 
     
