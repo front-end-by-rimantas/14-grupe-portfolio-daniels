@@ -143,10 +143,10 @@ $(document).ready(function () {
     
     for (let i=0; i < links.length; i++) {
         links[i].addEventListener('click', click) 
+        
     }
     function click() {
-        document.querySelector('.links').classList.add('tap');
-        
+        document.querySelector('.links').classList.remove('tap');
     }
 
        

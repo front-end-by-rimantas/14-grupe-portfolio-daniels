@@ -5,7 +5,7 @@
     text-align: center;
     color: white;
     float: left; 
-    margin-top: calc(50vh - 110px);
+    margin-top: calc(50vh - 190px);
     padding-bottom: 100px;
     position: relative;
     font-weight: 200; 
@@ -62,9 +62,23 @@
         border-right: 2px solid white;
         margin-top: 5px;
     }
+    .hero_section {
+        display: inline-block;
+        width: 100%;
+        text-align: center;
+        color: white;
+        float: left; 
+        margin-top: calc(50vh - 120px);
+        position: relative;
+        font-weight: 200; 
+    }
     .social > .fa {
         z-index: 0;
     }
+    /* .social {
+        display: inline-block;
+        padding-bottom: 1px;
+    } */
 }
 @media ( max-width: 768px ) {
     .container  {
@@ -78,13 +92,13 @@
         text-align: center;
         color: white;
         float: left; 
-        margin-top: calc(50vh - 110px);
+        margin-top: calc(50vh - 170px);
         position: relative;
         font-weight: 200; 
     }
     .who {
         display: inline-block;
-        margin: 10px 0px 65px 0px;
+        margin: 10px 0px 35px 0px;
         font-size: 30px;
         line-height: 45px;
         border-right: 2px solid white;
@@ -96,6 +110,7 @@
         line-height: 45px;
         font-weight: 350;
     } 
+    
 }
 
 
