@@ -33,10 +33,6 @@ section h1::after {
     display: inline-block;
     z-index: -1;
 }
-
-
-
-
         .carousel-indicators {
             display: inline-block;
             height: 0px;
