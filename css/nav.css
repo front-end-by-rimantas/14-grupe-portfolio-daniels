@@ -33,7 +33,7 @@
             font-family: 'Montserrat', sans-serif;
             margin-right: 35px;
             text-decoration: none;
-            border-bottom: 2px solid white;
+            border-bottom: 2px solid transparent;
             z-index: 1;
         }
             .absolute a:first-of-type {
