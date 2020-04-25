@@ -129,31 +129,63 @@ $(document).ready(function () {
                 }
         
     }
-    // tapClose();
 
 
-    // Clock 
 
-    // const time = 50;
-    // const step = 10;
+    // Statistic
 
-    function runNum(num, elem, time,step) {
-        let l = document.querySelector('#' + elem)
-        n = 0;
-        let t = Math.round(time / (num / step) );
-        let interval = setInterval(() => {
-            n = n + step;
-            if (n >= num){
-                clearInterval(interval);
-               
-            } 
-            l.innerHTML = n;
-            
-        },
-        t);
-    }
-    setTimeout(function() { runNum(9450, 'c3', 1, 10) }, 1000);
+
+    let number = null;
+    let animation = false;
+    let page = document.querySelector('.statistic_list');
+function StatisticGenerator(data) {
+
+    let where = document.querySelector('.statistic_list');
+    let HTML = '';
+        for(let i=0; i<data.length; i++) {
+           HTML += `<div class="box">
+                        <i class="fa fa-${data[i].logo}"></i>
+                        <h4>${data[i].num}</h4>
+                        <p>${data[i].title}</p>
+                   </div>`;
+        }
+        where.innerHTML = HTML;
+        number = document.querySelectorAll('.box h4');
+        
+        position();
+}
+
+function position() {
+    window.addEventListener('scroll', () => {
+        // console.log(window.scrollY);
+        // console.log(':' + page.offsetTop);
+        let height = page.offsetTop - window.innerHeight;
+        if ( height < window.scrollY && !animation) {
+            let time = 1000;
+            let frames = 24;
+            let interval = 1000 / frames;
+            let count = 0;
+            let counter = setInterval(() => {
+                for(let i=0; i<number.length; i++) {
+                    number[i].innerText = count;;
+                } 
+                count++;
+                if ( count * interval > time ) {
+                    clearInterval(counter);
+                    
+                }
+            }, interval);
+  
+            animation = true; 
+        }
     
+        
+    })
+}
+
+StatisticGenerator(statistic);
+
+
     
 
     // close tap menu

@@ -3,6 +3,12 @@
     height: 300px;
     background-color: rgb(255, 255, 255);
 }
+    .statistic_list {
+        display: inline-block;
+        width: 100%;
+        position: relative;
+        /* !!!!! */
+    }
     .bg2 {
         padding: 0px;
         margin-left: 120px;
