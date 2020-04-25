@@ -137,6 +137,7 @@ $(document).ready(function () {
 
     let number = null;
     let animation = false;
+
     let page = document.querySelector('.statistic_list');
 function StatisticGenerator(data) {
 
@@ -145,7 +146,7 @@ function StatisticGenerator(data) {
         for(let i=0; i<data.length; i++) {
            HTML += `<div class="box">
                         <i class="fa fa-${data[i].logo}"></i>
-                        <h4>${data[i].num}</h4>
+                        <h4 data-num="${data[i].num}">${data[i].num}</h4>
                         <p>${data[i].title}</p>
                    </div>`;
         }
@@ -157,24 +158,24 @@ function StatisticGenerator(data) {
 
 function position() {
     window.addEventListener('scroll', () => {
-        // console.log(window.scrollY);
-        // console.log(':' + page.offsetTop);
         let height = page.offsetTop - window.innerHeight;
         if ( height < window.scrollY && !animation) {
             let time = 1000;
             let frames = 24;
-            let interval = 1000 / frames;
+            let interval = ( time / 1000) * frames;
             let count = 0;
             let counter = setInterval(() => {
                 for(let i=0; i<number.length; i++) {
-                    number[i].innerText = count;;
+                    number[i].innerText = Math.ceil(count * parseInt(number[i].dataset.num) / interval );
+                    
                 } 
+
                 count++;
-                if ( count * interval > time ) {
+                if ( count >= frames+1) {
                     clearInterval(counter);
                     
                 }
-            }, interval);
+            }, 2500 / frames);
   
             animation = true; 
         }
