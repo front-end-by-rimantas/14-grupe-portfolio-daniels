@@ -160,22 +160,19 @@ function position() {
     window.addEventListener('scroll', () => {
         let height = page.offsetTop - window.innerHeight;
         if ( height < window.scrollY && !animation) {
-            let time = 1000;
+            let time = 2000;
             let frames = 24;
-            let interval = ( time / 1000) * frames;
             let count = 0;
             let counter = setInterval(() => {
                 for(let i=0; i<number.length; i++) {
-                    number[i].innerText = Math.ceil(count * parseInt(number[i].dataset.num) / interval );
-                    
+                    number[i].innerText = Math.ceil(count * parseInt(number[i].dataset.num) / frames ); 
                 } 
-
                 count++;
                 if ( count >= frames+1) {
                     clearInterval(counter);
                     
                 }
-            }, 2500 / frames);
+            }, time / frames);
   
             animation = true; 
         }
