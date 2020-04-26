@@ -55,19 +55,17 @@ heroAnimation( heroAnime, 0, 0, 'add' );
 window.onscroll = function() {nav_position()};
 
 let header = document.querySelector('header').offsetHeight;
-let nav = document.querySelector('nav');
+let nav = document.querySelector('.absolute');
 
 function nav_position() {
   if (window.pageYOffset >= header) {
-    nav.classList.add("sticky");
-  } else {
-    nav.classList.remove("sticky");
+    nav.classList.remove("absolute");
+    nav.classList.add("fixed");
+  } else { 
+    nav.classList.remove("fixed");
+    nav.classList.add("absolute");
   }
 }
-
-// refresh
-
-window.onresize = function(){ location.reload(); }
 
 /// Scroll spy 
 
@@ -100,7 +98,7 @@ $(document).ready(function () {
           var currLink = $(this);
          var refElement = $(currLink.attr("href"));
           if (refElement.position().top <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
-              $('#home a').removeClass("active");
+              $('nav a').removeClass("active");
               currLink.addClass("active");
           }
           else{
@@ -120,6 +118,7 @@ $(document).ready(function () {
 
     function tapClose() {
 
+
             let tap = document.querySelector('.links');
             
                 if ( tap.className === 'links') {
@@ -130,13 +129,64 @@ $(document).ready(function () {
                 }
         
     }
-    tapClose();
+
+
+
+    // Statistic
+
+
+    let number = null;
+    let animation = false;
+
+    let page = document.querySelector('.statistic_list');
+function StatisticGenerator(data) {
+
+    let where = document.querySelector('.statistic_list');
+    let HTML = '';
+        for(let i=0; i<data.length; i++) {
+           HTML += `<div class="box">
+                        <i class="fa fa-${data[i].logo}"></i>
+                        <h4 data-num="${data[i].num}">${data[i].num}</h4>
+                        <p>${data[i].title}</p>
+                   </div>`;
+        }
+        where.innerHTML = HTML;
+        number = document.querySelectorAll('.box h4');
+        
+        position();
+}
+
+function position() {
+    window.addEventListener('scroll', () => {
+        let height = page.offsetTop - window.innerHeight;
+        if ( height < window.scrollY && !animation) {
+            let time = 2000;
+            let frames = 24;
+            let count = 0;
+            let counter = setInterval(() => {
+                for(let i=0; i<number.length; i++) {
+                    number[i].innerText = Math.ceil(count * parseInt(number[i].dataset.num) / frames ); 
+                } 
+                count++;
+                if ( count >= frames+1) {
+                    clearInterval(counter);
+                    
+                }
+            }, time / frames);
+  
+            animation = true; 
+        }
+    
+        
+    })
+}
+
+StatisticGenerator(statistic);
 
 
     
 
-
-
+    // close tap menu
 
     let tap = document.querySelector('body');
 
@@ -144,11 +194,12 @@ $(document).ready(function () {
     
     for (let i=0; i < links.length; i++) {
         links[i].addEventListener('click', click) 
-    }
-    function click() {
-        document.querySelector('.links').classList.add('tap');
         
     }
+    function click() {
+        document.querySelector('.links').classList.remove('tap');
+    }
+
        
 
     
