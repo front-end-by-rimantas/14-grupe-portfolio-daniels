@@ -1,0 +1,88 @@
+.statistic {
+    display: inline-block;
+    height: 300px;
+    background-color: rgb(255, 255, 255);
+}
+    .statistic_list {
+        display: inline-block;
+        width: 100%;
+        position: relative;
+        /* !!!!! */
+    }
+    .bg2 {
+        padding: 0px;
+        margin-left: 120px;
+    }
+.box {
+    position: relative;
+    display: inline-block;
+    width: 25%;
+    float: left;
+    font-size: 35px;
+    text-align: center;
+    margin-top: 90px;
+}
+    .box > .fa {
+        display: inline-block;
+    }
+    .box > p {
+        display: inline-block;
+        font-size: 15px;
+        font-weight: 400;
+        color: rgb(116, 116, 116);
+        letter-spacing: 1px;
+        font-weight: bold;
+    }
+    .box > h4 {
+        font-size: 30px;
+        font-weight: bold;
+        padding: 15px 0px;
+        letter-spacing: 0.5px;
+    }
+
+    @media ( max-width: 1300px ) {
+        .bg2 {
+            padding: 0px;
+            margin-left: 70px;
+        }
+    }
+    @media ( max-width: 1200px ) {
+        .bg2 {
+            padding: 0px;
+            margin-left: 70px;
+        }
+    }
+    @media ( max-width: 1100px ) {
+        .bg2 {
+            padding: 0px;
+            margin-left: 100px;
+        }
+    }
+    @media ( max-width: 900px ) {
+        .bg2 {
+            padding: 0px;
+            margin-left: 60px;
+        }
+    }
+    @media ( max-width: 768px ) {
+        .bg2 {
+            padding: 0px;
+            margin-left: 0px;
+        }
+        .statistic {
+            display: inline-block;
+            height: 100%;
+            background-color: rgb(255, 255, 255);
+            padding-bottom: 50px;
+        }
+        .box {
+            position: relative;
+            display: inline-block;
+            width: 50%;
+            float: left;
+            font-size: 35px;
+            text-align: center;
+            margin-top: 90px;
+        }
+    }
+    

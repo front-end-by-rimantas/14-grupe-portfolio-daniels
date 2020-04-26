@@ -2,9 +2,6 @@
     display: inline-block;
     width: 100%;
     margin-bottom: 100px;
-    /* height: 800px; */
-    /* margin-bottom: 100px;
-    margin-top: 0; */
 }
     .carousel-indicators {
         display: inline-block;
@@ -93,19 +90,15 @@
     }
 }
 @media ( max-width: 900px ) {
-    .blog {
-    position: relative;
-    display: inline-block;
-    width: 100%;
-    height: 600px;
-    margin-bottom: 0px;
+    .container {
+        width: 100%;
+        margin: 0;
     }
 }
 @media ( max-width: 768px ) {
     .blog {
     display: inline-block;
     width: 100%;
-    /* height: 600px; */
     }
     .item {
         display: inline-block;
@@ -118,13 +111,13 @@
     .item > .itemBox {
         display: inline-block;
         width: 450px;
-        /* height: 500px; */
         background-color: white;
     }
     .carousel-indicators {
         display: inline-block;
         height: 0px;
-        margin-bottom: -60px;
+        margin-bottom: 10px;
         color: black;
+        padding: 5px;
     }
 }

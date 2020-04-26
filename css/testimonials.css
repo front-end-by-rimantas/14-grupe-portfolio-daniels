@@ -33,15 +33,15 @@ section h1::after {
     display: inline-block;
     z-index: -1;
 }
-
-
-
-
         .carousel-indicators {
             display: inline-block;
             height: 0px;
             color: black;
             z-index: 1;
+        }
+        ol {
+            display: inline-block;
+            padding-bottom: 70px;
         }
     .item {
         display: inline-block;
@@ -122,7 +122,7 @@ section h1::after {
 @media ( max-width: 900px ) {
     .testimonials {
         display: inline-block;
-        width: 700px;
+        width: 100%;
         overflow: hidden;
     }
 }
@@ -142,8 +142,8 @@ section h1::after {
     }
     .carousel-indicators {
         display: inline-block;
-        height: 0px;
-        margin-bottom: 20px;
+        height: 10px;
+        margin-top: 0px;
         color: black;
     }
 }
